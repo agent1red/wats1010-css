@@ -1,88 +1,69 @@
-/* This is where styles are defined for your page. */
+/* The styles defined on this page are in order regarding the index.html code structure. 
 
+This css code was created by Keving Hudson for WATS3010 class at SeattlU. 7/7/2016 */
 
-/* One style is provided as example. */
-
+/* Background image added as a cover that stretches to fit entire web page */
 body {
   background-image: url('images/hard-paper-texture.jpg');
   background-size: cover;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Headings font changed */
+h1,h2,h3,h4,h5,h6 {
   font-family: sans-serif;
 }
-
+/* All paragraphs font changed*/
 p {
   font-family: "Times New Roman", Times, serif;
 }
-
+/* This is the grey banner up top that is translucent with rounded corners */
 header.page-header {
   background-color: lightblue;
-  /*   opacity: 0.5;
-  filter: alpha(opacity=50); */
   background: rgba(100, 100, 100, 0.5);
   padding: 1rem;
-  margin-right: 20cm;
+  margin-right: 7cm;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
-
+/* Changing the first child (text) of the class page-hearder */
 .page-header h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 60px;
-  opacity: 1.0 !important;
 }
-
-.page-header p {
-  margin-top: 0;
-}
-
+/* Changing the first child under the first child of page-header */
 .page-header small {
   font-size: 20px;
 }
-
-section#content {
-  /*   background-color: lightcoral; */
+/* Changing the second child of the class page-header */
+.page-header p {
+  margin-top: 0;
 }
-
-aside.more-info {
-  /*   background-color: lightgray; */
-}
-
+/* Changing the size of the picture and moving the img description underneath the img */
 aside.more-info img {
   width: 300px;
   height: auto;
   display: block;
   margin-bottom: .2cm;
 }
-
+/* Sub class in the aside container spacing changed */
 .info-links {
   margin-bottom: 0;
 }
-
+/* Sub class social-links changed to horizontal layout */
 .social-links li {
-  /*   display: inline;
-  margin-top: 0;
-  padding-bottom: 1em; */
   margin-left: 0;
   padding-left: 2px;
   border: none;
   list-style: none;
   display: inline;
 }
-
-section.poem {
-  /*   background-color: lightgreen; */
+/* Section content list bullets removed */
+#content {
+  list-style-type: none;
 }
-
+/* Section content sub class poem has text changed for better viewing */
 .poem {
   list-style-type: none;
   font-size: large;
@@ -91,14 +72,10 @@ section.poem {
   margin: 0;
   padding: 0;
 }
-
+/* First child of sub class poem changes the first letter to a different size that allows the poem to float around the lettering */
 .poem li:first-child:first-letter {
   float: left;
   font-size: 3cm;
   margin-right: .25cm;
   line-height: 50%;
-}
-
-footer.page-footer {
-  /*   background-color: lightsalmon; */
 }
