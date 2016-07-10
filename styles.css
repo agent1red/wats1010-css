@@ -47,6 +47,10 @@ aside.more-info img {
   display: block;
   margin-bottom: .2cm;
 }
+/* class more-info list list bullets removed */
+.more-info ul {
+  list-style-type: none;
+}
 /* Sub class in the aside container spacing changed */
 .info-links {
   margin-bottom: 0;
@@ -78,4 +82,8 @@ aside.more-info img {
   font-size: 3cm;
   margin-right: .25cm;
   line-height: 50%;
+}
+/* Section page-footer list bullets removed */
+.page-footer li {
+  list-style-type: none;
 }
