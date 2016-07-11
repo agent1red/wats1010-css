@@ -10,17 +10,21 @@ body {
 /* Headings font changed */
 h1,h2,h3,h4,h5,h6 {
   font-family: sans-serif;
+  margin-left: 3rem;
 }
 /* All paragraphs font changed*/
 p {
   font-family: "Times New Roman", Times, serif;
+  margin-left: 3rem;
 }
 /* This is the grey banner up top that is translucent with rounded corners */
 header.page-header {
   background-color: lightblue;
+  background-size: auto;
   background: rgba(100, 100, 100, 0.5);
-  padding: 1rem;
-  margin-right: 7cm;
+  padding: 0px;
+  margin-right: 0cm;
+  border: 2px solid #000;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
@@ -28,6 +32,7 @@ header.page-header {
 }
 /* Changing the first child (text) of the class page-hearder */
 .page-header h1 {
+  margin-left: 2rem;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 60px;
@@ -39,33 +44,87 @@ header.page-header {
 /* Changing the second child of the class page-header */
 .page-header p {
   margin-top: 0;
+  margin-left: 2rem;
 }
 /* Changing the size of the picture and moving the img description underneath the img */
 aside.more-info img {
   width: 300px;
   height: auto;
   display: block;
-  margin-bottom: .2cm;
+  margin-bottom: 1cm;
 }
 /* class more-info list list bullets removed */
 .more-info ul {
   list-style-type: none;
 }
+.more-info p {
+  font-size: 20px;
+  margin-bottom: 1cm;
+  font-weight: bold;
+}
 /* Sub class in the aside container spacing changed */
 .info-links {
   margin-bottom: 0;
 }
-/* Sub class social-links changed to horizontal layout */
-.social-links li {
-  margin-left: 0;
-  padding-left: 2px;
-  border: none;
+/* transparent background links set up horizonataly */
+.info-links li {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  background: rgba(0, 0, 255, 0.25);
+  padding: 9px 10px;
   list-style: none;
-  display: inline;
+  display: inline-block;
+}
+/* changing the default link colors */
+.info-links li a {
+  color: black;
+  text-decoration: none;
+}
+/* hover effects with finger pointer */
+.info-links li a:hover {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  padding: 9px 10px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+/* Sub class social-links changed to horizontal layout with translucent background color */
+.social-links li {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  background: rgba(0, 0, 255, 0.25);
+  padding: 9px 10px;
+  list-style: none;
+  display: inline-block;
+}
+/* getting rid of the default link colors */
+.social-links li a {
+  color: black;
+  text-decoration: none;
+}
+/* hover effects with finger pointer */
+.social-links li a:hover {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  padding: 9px 10px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 /* Section content list bullets removed */
 #content {
   list-style-type: none;
+  font-style: italic;
+  margin-left: 3rem;
 }
 /* Section content sub class poem has text changed for better viewing */
 .poem {
@@ -73,17 +132,42 @@ aside.more-info img {
   font-size: large;
   line-height: 1.8;
   list-style-position: outside;
-  margin: 0;
+  margin: 80px;
   padding: 0;
 }
 /* First child of sub class poem changes the first letter to a different size that allows the poem to float around the lettering */
 .poem li:first-child:first-letter {
   float: left;
   font-size: 3cm;
+  font-style: normal;
   margin-right: .25cm;
   line-height: 50%;
 }
-/* Section page-footer list bullets removed */
+/* Section page-footer list bullets removed with translucent background */
 .page-footer li {
   list-style-type: none;
+    margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  background: rgba(0, 0, 255, 0.25);
+  padding: 12px 16px;
+  list-style: none;
+  display: inline-block;
 }
+
+.page-footer li a {
+  color: black;
+  text-decoration: none;
+}
+.page-footer li a:hover {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  padding: 12px 16px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
